@@ -14,6 +14,11 @@ import bus from '@/utils/bus'
 import filters from '@/filters'
 import preventReClick from '@/directive/prevent-re-click'
 import i18n from '@/lang'
+import BaiduMap from 'vue-baidu-map'
+
+Vue.use(BaiduMap, {
+  ak: 'S7mKsUzNoeYSqZOFwx0GWT6gUhLpIEqb'
+})
 
 Vue.config.productionTip = false
 

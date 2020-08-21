@@ -3,6 +3,7 @@ import Vue from 'vue'
 const bus = new Vue({
   methods: {
     on(event, callback) {
+      console.log('on')
       this.$on(event, callback)
       return this
     },
@@ -18,6 +19,7 @@ const bus = new Vue({
     },
 
     emit(event, ...args) {
+      console.log('emit', event, ...args)
       this.$emit(event, ...args)
       return this
     }

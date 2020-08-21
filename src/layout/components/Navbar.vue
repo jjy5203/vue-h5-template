@@ -49,6 +49,7 @@ export default {
   },
   methods: {
     onClickLeft() {
+      console.log('onClickLeft')
       this.$router.back(-1)
     },
     onClickRight() {
